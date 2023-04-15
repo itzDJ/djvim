@@ -14,3 +14,11 @@
 - nvim-treesitter
 - harpoon
 - alpha-nvim
+
+## Install
+`git clone https://github.com/itzDJ/djs-neovim`
+`./install.sh`
+
+## Uninstall
+`rm -rf ~/.config/nvim`
+`rm -rf ~/.local/share/nvim`
