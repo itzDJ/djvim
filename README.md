@@ -1,15 +1,15 @@
 # DJ's custom nvim
-## Plugin list
+## Plugin list (and dependencies)
 - packer
-- copilot
-- mason
+- copilot (node.js)
+- mason (git & curl)
 - mason-lspconfig
 - nvim-lspconfig
 - vim-commentary
 - vim-visual-multi
 - markdown-preview
 - lualine
-- telescope
+- telescope (ripgrep?)
 - github-nvim-theme
 - nvim-treesitter
 - harpoon
