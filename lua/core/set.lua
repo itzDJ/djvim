@@ -1,4 +1,4 @@
--- VIM OPTIONS
+-- (VIM) SETTINGS
 vim.opt.number = true -- enable numbers
 vim.opt.relativenumber = true -- enable relative numbers
 
