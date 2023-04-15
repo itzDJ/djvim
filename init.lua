@@ -1,4 +1,4 @@
 -- REQUIRE CONFIGS
 require("core.keymaps")
 require("core.packer")
-require("core.set")
+require("core.settings")
