@@ -1,4 +1,6 @@
 # DJ's custom nvim
+## Nerd Fonts
+Install a nerd font (ex: MesloLGS NF) for proper icon integration.
 ## Plugin list (and dependencies)
 - packer
 - copilot (node.js)
