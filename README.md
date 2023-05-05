@@ -12,7 +12,7 @@ Install a nerd font (ex: JetBrainsMono Nerd Font) for proper icon integration.
 - vim-visual-multi
 - markdown-preview
 - lualine
-- telescope (ripgrep?)
+- telescope (ripgrep)
 - github-nvim-theme
 - nvim-treesitter
 - harpoon
