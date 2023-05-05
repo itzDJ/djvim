@@ -20,8 +20,7 @@ Install a nerd font (ex: JetBrainsMono Nerd Font) for proper icon integration.
 
 ## Install
 ```
-git clone https://github.com/itzDJ/djs-neovim
-./install.sh
+git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim
 ```
 
 ## Uninstall
