@@ -27,5 +27,6 @@ git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim
 ```
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
 ```
