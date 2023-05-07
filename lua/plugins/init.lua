@@ -1,4 +1,4 @@
-require("packer")
+require("plugins.packer")
 
 -- Plugins
 require("plugins.configs.harpoon")
