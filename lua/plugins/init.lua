@@ -51,16 +51,13 @@ return require('packer').startup(function(use)
 
     -- TODO: Add theme that works without true color
     use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
-    require("plugins.configs.theme")
 
     use 'theprimeagen/harpoon'
-    require("plugins.configs.harpoon")
 
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-    require("plugins.configs.lualine")
 
     use({
         "iamcco/markdown-preview.nvim",
@@ -72,20 +69,17 @@ return require('packer').startup(function(use)
         'williamboman/mason-lspconfig.nvim',
         'neovim/nvim-lspconfig',
     }
-    require("plugins.configs.lsp_config") -- TODO: Only working in relative directory
 
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    require("plugins.configs.treesitter")
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    require("plugins.configs.telescope")
 
     use 'tpope/vim-commentary'
 
