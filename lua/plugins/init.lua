@@ -13,58 +13,22 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+    -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-    use 'github/copilot.vim'
-
-    use {
-        'williamboman/mason.nvim',
-        'williamboman/mason-lspconfig.nvim',
-        'neovim/nvim-lspconfig',
-    }
-
-    use 'tpope/vim-commentary'
-
-    use 'mg979/vim-visual-multi'
-
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
-
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
-    }
-
-    -- TODO: Add theme that works without true color
-    use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
-
-    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-    }
-
-    use 'theprimeagen/harpoon'
-
+    -- Plugins begin here
     use {
         "goolord/alpha-nvim",
         config = function ()
             local alpha = require'alpha'
             local dashboard = require'alpha.themes.dashboard'
             dashboard.section.header.val = {
-               [[  _______         __     ____    ____  __  .___  ___. ]],
-               [[ |       \       |  |    \   \  /   / |  | |   \/   | ]],
-               [[ |  .--.  |      |  |     \   \/   /  |  | |  \  /  | ]],
-               [[ |  |  |  |.--.  |  |      \      /   |  | |  |\/|  | ]],
-               [[ |  '--'  ||  `--'  |       \    /    |  | |  |  |  | ]],
-               [[ |_______/  \______/         \__/     |__| |__|  |__| ]],
+                [[  _______         __     ____    ____  __  .___  ___. ]],
+                [[ |       \       |  |    \   \  /   / |  | |   \/   | ]],
+                [[ |  .--.  |      |  |     \   \/   /  |  | |  \  /  | ]],
+                [[ |  |  |  |.--.  |  |      \      /   |  | |  |\/|  | ]],
+                [[ |  '--'  ||  `--'  |       \    /    |  | |  |  |  | ]],
+                [[ |_______/  \______/         \__/     |__| |__|  |__| ]],
             }
             dashboard.section.buttons.val = {
                 -- dashboard.button( "e", "New file" , ":ene <BAR> startinsert <CR>"),
@@ -82,6 +46,50 @@ return require('packer').startup(function(use)
             alpha.setup(dashboard.config)
         end
     }
+
+    use 'github/copilot.vim'
+
+    -- TODO: Add theme that works without true color
+    use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+    require("plugins.configs.theme")
+
+    use 'theprimeagen/harpoon'
+    require("plugins.configs.harpoon")
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    require("plugins.configs.lualine")
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
+    use {
+        'williamboman/mason.nvim',
+        'williamboman/mason-lspconfig.nvim',
+        'neovim/nvim-lspconfig',
+    }
+    require("plugins.configs.lsp_config") -- TODO: Only working in relative directory
+
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    require("plugins.configs.treesitter")
+
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    require("plugins.configs.telescope")
+
+    use 'tpope/vim-commentary'
+
+    use 'mg979/vim-visual-multi'
 
     -- use 'tpope/vim-fugitive' -- git
 
