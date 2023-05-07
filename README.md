@@ -22,7 +22,7 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: JetBrainsMo
 
 ## Install
 ```bash
-git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim
+git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim && nvim
 ```
 
 ## Uninstall
