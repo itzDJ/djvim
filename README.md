@@ -5,7 +5,7 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: JetBrainsMo
 ## Plugin manager
 [Packer](https://github.com/wbthomason/packer.nvim)
 
-## Plugin list (and dependencies)
+## Plugins (and dependencies)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - [copilot](https://github.com/github/copilot.vim) (node.js)
 - [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
