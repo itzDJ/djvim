@@ -52,8 +52,6 @@ return require('packer').startup(function(use)
     -- TODO: Add theme that works without true color
     use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
 
-    use 'theprimeagen/harpoon'
-
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
