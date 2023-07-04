@@ -1,4 +1,4 @@
-# DJ's custom nvim
+# DJ's [Neovim](https://neovim.io)
 ## Nerd Fonts
 Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: JetBrainsMono Nerd Font) for proper icon integration.
 
