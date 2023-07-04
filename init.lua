@@ -1,1 +1,3 @@
-require("dj")
+require "core.settings"
+require "core.keymaps"
+require "plugins"

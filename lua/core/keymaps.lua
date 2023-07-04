@@ -14,4 +14,3 @@ vim.keymap.set("v", "<a-j>", ":m '>+1<CR>gv=gv", { noremap = true }) -- move lin
 vim.keymap.set("v", "<a-k>", ":m '<-2<CR>gv=gv", { noremap = true }) -- move lines up with <alt> + k
 
 vim.keymap.set("n", "<leader>t", ":Explore<CR>", { noremap = true}) -- open netrw with <leader> + t
-vim.keymap.set("n", "<leader>md", ":MarkdownPreviewToggle<CR>", { noremap = true}) -- open :MarkdownPreviewToggle with <leader> + m + d
