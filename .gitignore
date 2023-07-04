@@ -1,2 +1,2 @@
-# Ignore the auto-generated files from packer
-/plugin/
+# Ignore the auto-generated file from lazy
+lazy-lock.json

@@ -3,7 +3,7 @@
 Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsMono Nerd Font](https://www.programmingfonts.org/#jetbrainsmono)) for proper icon integration.
 
 ## Plugin manager
-[Packer](https://github.com/wbthomason/packer.nvim)
+[Lazy](https://github.com/folke/lazy.nvim)
 
 ## Plugins (and dependencies)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)

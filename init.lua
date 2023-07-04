@@ -1,3 +1,1 @@
-require "core.settings"
-require "core.keymaps"
-require "core.packer"
+require "core"
