@@ -1,5 +1,4 @@
 -- REQUIRE CONFIGS
 require("core.settings")
-
-require("plugins")
+require("core.packer")
 require("core.keymaps")
