@@ -9,12 +9,9 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - [copilot](https://github.com/github/copilot.vim) (node.js)
 - [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
-- [harpoon](https://github.com/ThePrimeagen/harpoon)
+<!-- - [harpoon](https://github.com/ThePrimeagen/harpoon) -->
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-- [mason](https://github.com/williamboman/mason.nvim) (git & curl)
-- [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim) (ripgrep)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
