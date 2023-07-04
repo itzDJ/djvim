@@ -1,3 +1,3 @@
 require("dj.settings")
-require("dj.keymaps")
 require("dj.packer")
+require("dj.keymaps")
