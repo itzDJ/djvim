@@ -24,8 +24,5 @@ git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim && nvim
 
 ## Uninstall
 ```bash
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
