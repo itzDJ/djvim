@@ -29,13 +29,11 @@ local plugins = {
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        "nvim-telescope/telescope.nvim", tag = "0.1.2",
+        dependencies = { "nvim-lua/plenary.nvim" }
     },
 
     "tpope/vim-commentary",
-
-    "mg979/vim-visual-multi",
 
     -- "tpope/vim-fugitive",
 }
