@@ -1,4 +1,5 @@
 {
+  "alpha-nvim": { "branch": "main", "commit": "9e33db324b8bb7a147bce9ea5496686ee859461d" },
   "copilot.vim": { "branch": "release", "commit": "a4a6d6b3f9e284e7f5c849619e06cd228cad8abd" },
   "github-nvim-theme": { "branch": "main", "commit": "e28eb579079c6abeb9c21bd85bb9a04379ac64b4" },
   "lazy.nvim": { "branch": "main", "commit": "0d61488b89a570415177f75a36ef93616aac6c77" },

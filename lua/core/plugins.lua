@@ -12,7 +12,29 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    -- alpha-nvim
+    {
+        "goolord/alpha-nvim",
+        config = function ()
+            local alpha = require'alpha'
+            local dashboard = require'alpha.themes.dashboard'
+            dashboard.section.header.val = {
+                [[  _______         __     ____    ____  __  .___  ___. ]],
+                [[ |       \       |  |    \   \  /   / |  | |   \/   | ]],
+                [[ |  .--.  |      |  |     \   \/   /  |  | |  \  /  | ]],
+                [[ |  |  |  |.--.  |  |      \      /   |  | |  |\/|  | ]],
+                [[ |  '--'  ||  `--'  |       \    /    |  | |  |  |  | ]],
+                [[ |_______/  \______/         \__/     |__| |__|  |__| ]],
+            }
+            dashboard.section.buttons.val = {
+                dashboard.button("n", "New file" , ":ene <BAR> startinsert <CR>"),
+                dashboard.button("t", "Netrw", ":Explore<CR>"),
+                dashboard.button("c", "Config" , ":e ~/.config/nvim/init.lua<CR>"),
+                dashboard.button("q", "Quit" , ":qa<CR>"),
+            }
+
+            alpha.setup(dashboard.config)
+        end
+    },
 
     "github/copilot.vim",
 
