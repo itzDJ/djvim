@@ -48,6 +48,12 @@ local plugins = {
         build = function() vim.fn["mkdp#util#install"]() end,
     },
 
+    {
+        'williamboman/mason.nvim',
+        'williamboman/mason-lspconfig.nvim',
+        'neovim/nvim-lspconfig',
+    },
+
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     {
