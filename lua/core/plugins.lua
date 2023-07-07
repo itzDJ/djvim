@@ -13,8 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
-        "jiangmiao/auto-pairs",
-
         "goolord/alpha-nvim",
         config = function ()
             local alpha = require'alpha'
@@ -37,6 +35,8 @@ local plugins = {
             alpha.setup(dashboard.config)
         end
     },
+
+    "jiangmiao/auto-pairs",
 
     "github/copilot.vim",
 
