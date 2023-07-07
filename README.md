@@ -42,7 +42,7 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Reformat files in lua/core to have plugin configs in a plugins directory
 - Setup a formatter, like prettier, to format on save
 
-## Possibly add
+### Possibly add
 - LSP into CMP (either always on or while Copilot is disabled)
 - File view instead of netrw
 - Terminal access (pop up or integrated like vscode)
