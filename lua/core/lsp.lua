@@ -17,7 +17,15 @@ lspconfig.bashls.setup{}
 lspconfig.clangd.setup{}
 lspconfig.jdtls.setup{}
 lspconfig.quick_lint_js.setup{}
-lspconfig.lua_ls.setup{}
+lspconfig.lua_ls.setup{
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = {"vim"}
+            }
+        }
+    }
+}
 lspconfig.marksman.setup{}
 lspconfig.pyright.setup{}
 

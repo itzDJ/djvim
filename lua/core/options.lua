@@ -1,10 +1,12 @@
 -- (VIM) SETTINGS
-vim.opt.number = true -- enable numbers
-vim.opt.relativenumber = true -- enable relative numbers
+local o = vim.opt
 
-vim.opt.tabstop = 4 -- insert 4 spaces for a tab
-vim.opt.shiftwidth = 4 -- change the number of space characters inserted for indentation
-vim.opt.expandtab = true -- use spaces instead of tabs
+o.number = true
+o.relativenumber = true
 
--- vim.opt.spelllang = en_us -- specific language not working
--- vim.opt.spell = true -- enable spell check
+o.tabstop = 4
+o.softtabstop = 4
+o.shiftwidth = 4
+o.expandtab = true
+
+o.smartindent = true
