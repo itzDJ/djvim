@@ -20,7 +20,8 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 
-## Plugin Dependencies
+## Dependencies
+- True color support in terminal (optional)
 - Node
 - Git
 - Curl
@@ -37,5 +38,11 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
 
 ## TODO
-- Reformat files in lua/core to include a plugins directory
+### Definitely add
+- Reformat files in lua/core to have plugin configs in a plugins directory
 - Setup a formatter, like prettier, to format on save
+
+## Possibly add
+- LSP into CMP (either always on or while Copilot is disabled)
+- File view instead of netrw
+- Terminal access (pop up or integrated like vscode)
