@@ -37,8 +37,6 @@ local plugins = {
         end
     },
 
-    "windwp/nvim-autopairs",
-
     "github/copilot.vim",
 
     -- TODO: Add theme that works without true color
@@ -55,6 +53,12 @@ local plugins = {
         'williamboman/mason.nvim',
         'williamboman/mason-lspconfig.nvim',
         'neovim/nvim-lspconfig',
+    },
+
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {} -- this is equalent to setup({}) function
     },
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
