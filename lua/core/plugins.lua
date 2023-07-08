@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
+        -- alpha-nvim might have to be loaded first
         "goolord/alpha-nvim",
         config = function ()
             local alpha = require'alpha'
