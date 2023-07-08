@@ -37,7 +37,7 @@ local plugins = {
         end
     },
 
-    "jiangmiao/auto-pairs",
+    "windwp/nvim-autopairs",
 
     "github/copilot.vim",
 

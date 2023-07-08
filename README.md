@@ -14,6 +14,7 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) (dependency)
 - [plenary](https://github.com/nvim-lua/plenary.nvim) (dependency)
