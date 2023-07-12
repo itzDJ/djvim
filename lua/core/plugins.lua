@@ -42,6 +42,8 @@ local plugins = {
     -- TODO: Add theme that works without true color
     "projekt0n/github-nvim-theme",
 
+    "theprimeagen/harpoon",
+
     { "nvim-lualine/lualine.nvim", dependencies = { { "nvim-tree/nvim-web-devicons", lazy = true } } },
 
     {
