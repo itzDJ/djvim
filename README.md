@@ -9,6 +9,7 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - [copilot](https://github.com/github/copilot.vim)
 - [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
