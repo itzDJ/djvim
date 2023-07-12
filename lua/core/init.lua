@@ -4,7 +4,6 @@ require "core.plugins"
 
 require "core.harpoon"
 require "core.lsp"
-require "core.lualine"
 require "core.telescope"
 require "core.theme"
 require "core.treesitter"

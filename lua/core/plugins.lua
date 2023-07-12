@@ -37,14 +37,22 @@ local plugins = {
         end
     },
 
+    {
+        "numToStr/Comment.nvim",
+        opts = {},
+    },
+
     "github/copilot.vim",
 
-    -- TODO: Add theme that works without true color
     "projekt0n/github-nvim-theme",
 
     "theprimeagen/harpoon",
 
-    { "nvim-lualine/lualine.nvim", dependencies = { { "nvim-tree/nvim-web-devicons", lazy = true } } },
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { { "nvim-tree/nvim-web-devicons", lazy = true } },
+        opts={}
+    },
 
     {
         "iamcco/markdown-preview.nvim",
@@ -69,10 +77,6 @@ local plugins = {
         "nvim-telescope/telescope.nvim", tag = "0.1.2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
-
-    "tpope/vim-commentary",
-
-    -- "tpope/vim-fugitive",
 }
 
 require("lazy").setup(plugins)
