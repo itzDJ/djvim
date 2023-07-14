@@ -7,5 +7,3 @@ require "core.lsp"
 require "core.telescope"
 require "core.theme"
 require "core.treesitter"
-
-print("Done. Restart Neovim.")
