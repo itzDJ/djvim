@@ -40,7 +40,6 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
 
 ## TODO
-- Reformat files in lua/core to have plugin configs in a plugins directory
 - Setup a formatter, like prettier, to format on save
 - View and change tab value (2 or 4 spaces or tab)
 - LSP into CMP (either always on or while Copilot is disabled)
