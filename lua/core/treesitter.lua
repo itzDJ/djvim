@@ -8,6 +8,7 @@ require'nvim-treesitter.configs'.setup {
       "vimdoc",
       "query",
 
+      "comment",
       "javascript",
       "markdown",
       "python",
