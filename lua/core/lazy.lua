@@ -44,7 +44,10 @@ local plugins = {
 
     "github/copilot.vim",
 
-    "projekt0n/github-nvim-theme",
+    {
+        'rose-pine/neovim',
+        name = 'rose-pine',
+    },
 
     "theprimeagen/harpoon",
 

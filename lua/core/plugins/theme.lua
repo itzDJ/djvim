@@ -5,8 +5,9 @@ local colorterm = handle:read('*a')
 handle:close()
 
 if colorterm == 'truecolor\n' then
-    require('github-theme').setup({
-        options = { transparent = true }
+    require('rose-pine').setup({
+        -- Clear background
+        disable_background = true,
     })
-    vim.cmd('colorscheme github_dark')
+    vim.cmd('colorscheme rose-pine-moon')
 end
