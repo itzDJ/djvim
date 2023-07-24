@@ -9,7 +9,6 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - [Comment](https://github.com/numToStr/Comment.nvim)
 - [copilot](https://github.com/github/copilot.vim)
-- [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
@@ -20,6 +19,7 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) (dependency)
 - [plenary](https://github.com/nvim-lua/plenary.nvim) (dependency)
+- [rose-pine](https://github.com/rose-pine/neovim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Dependencies

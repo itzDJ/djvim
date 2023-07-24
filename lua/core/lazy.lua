@@ -44,11 +44,6 @@ local plugins = {
 
     "github/copilot.vim",
 
-    {
-        'rose-pine/neovim',
-        name = 'rose-pine',
-    },
-
     "theprimeagen/harpoon",
 
     {
@@ -75,6 +70,11 @@ local plugins = {
     },
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+
+    {
+        'rose-pine/neovim',
+        name = 'rose-pine',
+    },
 
     {
         "nvim-telescope/telescope.nvim", tag = "0.1.2",
