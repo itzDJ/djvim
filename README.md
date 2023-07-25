@@ -7,18 +7,14 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 
 ## Plugins
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- [Comment](https://github.com/numToStr/Comment.nvim)
+- [comment](https://github.com/numToStr/Comment.nvim)
 - [copilot](https://github.com/github/copilot.vim)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-- [mason](https://github.com/williamboman/mason.nvim)
-- [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
-- [neovim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) (dependency)
-- [plenary](https://github.com/nvim-lua/plenary.nvim) (dependency)
 - [rose-pine](https://github.com/rose-pine/neovim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
@@ -42,6 +38,4 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ## TODO
 - Setup a formatter, like prettier, to format on save
 - View and change tab value (2 or 4 spaces or tab)
-- LSP into CMP (either always on or while Copilot is disabled)
-- [File tree](https://github.com/nvim-tree/nvim-tree.lua) instead of netrw
 - [Terminal](https://github.com/akinsho/toggleterm.nvim) access (pop up or integrated like vscode)
