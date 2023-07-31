@@ -14,3 +14,6 @@ vim.keymap.set("v", "<a-j>", ":m '>+1<CR>gv=gv", { noremap = true }) -- move lin
 vim.keymap.set("v", "<a-k>", ":m '<-2<CR>gv=gv", { noremap = true }) -- move lines up with <alt> + k
 
 vim.keymap.set("n", "<leader>t", ":Explore<CR>", { noremap = true}) -- open netrw with <leader> + t
+
+vim.keymap.set("n", "<leader>y", '"+y', { noremap = true }) -- copy to clipboard with <leader> + y (with optional count before and required motion after just like y)
+vim.keymap.set("v", "<leader>y", '"+y', { noremap = true }) -- copies highlighted text to clipboard with <leader> + y
