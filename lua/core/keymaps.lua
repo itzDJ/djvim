@@ -3,7 +3,6 @@
 vim.g.mapleader = " " -- set leader key to space
 
 vim.keymap.set("n", "<c-s>", ":w<CR>", { noremap = true }) -- save file with <ctrl> + s
-vim.keymap.set("n", "<c-q>", ":q<CR>", { noremap = true }) -- quit file with <ctrl> + q
 
 vim.keymap.set("n", "<c-d>", "<c-d>zz", { noremap = true }) -- scroll down with <ctrl> + d and keep cursor in the middle
 vim.keymap.set("n", "<c-u>", "<c-u>zz", { noremap = true }) -- scroll up with <ctrl> + u and keep cursor in the middle
