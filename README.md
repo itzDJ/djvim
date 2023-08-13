@@ -6,7 +6,6 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 [Lazy](https://github.com/folke/lazy.nvim)
 
 ## Plugins
-- [alpha-nvim](https://github.com/goolord/alpha-nvim)
 - [comment](https://github.com/numToStr/Comment.nvim)
 - [copilot](https://github.com/github/copilot.vim)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
