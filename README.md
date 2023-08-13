@@ -1,6 +1,6 @@
 # DJ's [Neovim](https://neovim.io)
 ## Nerd Fonts
-Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsMono Nerd Font](https://www.programmingfonts.org/#jetbrainsmono)) for proper icon integration.
+Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsMono Nerd Font Regular](https://www.programmingfonts.org/#jetbrainsmono)) for proper icon integration.
 
 ## Plugin manager
 [Lazy](https://github.com/folke/lazy.nvim)
