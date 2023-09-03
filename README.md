@@ -37,4 +37,4 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ## TODO
 - Setup a formatter, like prettier, to format on save
 - View and change tab value (2 or 4 spaces or tab)
-- [Terminal](https://github.com/akinsho/toggleterm.nvim) access (pop up or integrated like vscode)
+- Configure for Java
