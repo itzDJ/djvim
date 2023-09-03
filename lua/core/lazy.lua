@@ -61,10 +61,7 @@ local plugins = {
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
-    {
-        'rose-pine/neovim',
-        name = 'rose-pine',
-    },
+    { 'projekt0n/github-nvim-theme' },
 
     {
         "nvim-telescope/telescope.nvim", tag = "0.1.2",
