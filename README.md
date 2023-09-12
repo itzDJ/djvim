@@ -8,13 +8,12 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 ## Plugins
 - [comment](https://github.com/numToStr/Comment.nvim)
 - [copilot](https://github.com/github/copilot.vim)
+- [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
-- [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [rose-pine](https://github.com/rose-pine/neovim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Dependencies
@@ -38,3 +37,4 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Setup a formatter, like prettier, to format on save
 - View and change tab value (2 or 4 spaces or tab)
 - Configure for Java
+- Add spell check
