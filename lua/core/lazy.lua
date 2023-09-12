@@ -21,6 +21,8 @@ local plugins = {
 
     "theprimeagen/harpoon",
 
+    { 'projekt0n/github-nvim-theme' },
+
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
@@ -43,12 +45,6 @@ local plugins = {
     },
 
     {
-        "nvim-lualine/lualine.nvim",
-        dependencies = { { "nvim-tree/nvim-web-devicons", lazy = true } },
-        opts={}
-    },
-
-    {
         "iamcco/markdown-preview.nvim",
         build = function() vim.fn["mkdp#util#install"]() end,
     },
@@ -60,8 +56,6 @@ local plugins = {
     },
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-
-    { 'projekt0n/github-nvim-theme' },
 
     {
         "nvim-telescope/telescope.nvim", tag = "0.1.2",
