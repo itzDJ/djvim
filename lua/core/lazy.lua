@@ -19,29 +19,38 @@ local plugins = {
 
     "github/copilot.vim",
 
+    'projekt0n/github-nvim-theme',
+
     "theprimeagen/harpoon",
 
-    { 'projekt0n/github-nvim-theme' },
+    {
+        { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+
+        --- Uncomment these if you want to manage LSP servers from neovim
+        { 'williamboman/mason.nvim' },
+        { 'williamboman/mason-lspconfig.nvim' },
+
+        -- LSP Support
+        {
+            'neovim/nvim-lspconfig',
+            dependencies = {
+                { 'hrsh7th/cmp-nvim-lsp' },
+            },
+        },
+
+        -- Autocompletion
+        {
+            'hrsh7th/nvim-cmp',
+            dependencies = {
+                { 'L3MON4D3/LuaSnip' },
+            }
+        }
+    },
 
     {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        dependencies = {
-            -- LSP Support
-            {'neovim/nvim-lspconfig'},             -- Required
-            {                                      -- Optional
-                'williamboman/mason.nvim',
-                build = function()
-                    pcall(vim.api.nvim_command, 'MasonUpdate')
-                end,
-            },
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
-
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},     -- Required
-            {'hrsh7th/cmp-nvim-lsp'}, -- Required
-            {'L3MON4D3/LuaSnip'},     -- Required
-        }
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
+        opts = {},
     },
 
     {
@@ -58,9 +67,16 @@ local plugins = {
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     {
-        "nvim-telescope/telescope.nvim", tag = "0.1.2",
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.2",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
+
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {},
+    }
 }
 
 require("lazy").setup(plugins)

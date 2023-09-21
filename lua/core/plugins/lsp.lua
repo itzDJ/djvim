@@ -1,27 +1,36 @@
-local lsp = require('lsp-zero').preset({})
+local lsp_zero = require('lsp-zero')
 
-lsp.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
-  lsp.default_keymaps({buffer = bufnr})
+lsp_zero.on_attach(function(client, bufnr)
+    -- see :help lsp-zero-keybindings
+    -- to learn the available actions
+    lsp_zero.default_keymaps({ buffer = bufnr })
+    lsp_zero.buffer_autoformat()
 end)
 
-lsp.ensure_installed({
-    "quick_lint_js", -- JavaScript
-    "lua_ls", -- Lua
-    "marksman", -- Markdown
-    "pyright", -- Python
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = {
+        "tsserver", -- JavaScript
+        "lua_ls",   -- Lua
+        "pylsp",    -- Python
+    },
+    handlers = {
+        lsp_zero.default_setup,
+    }
 })
 
-require'lspconfig'.lua_ls.setup {
+require('lspconfig').lua_ls.setup({
     settings = {
         Lua = {
             diagnostics = {
                 -- Get the language server to recognize the `vim` global
-                globals = {'vim'},
+                globals = { 'vim' },
             },
         },
     },
-}
+})
 
-lsp.setup()
+lsp_zero.setup_servers({
+    "tsserver",
+    "pylsp",
+})

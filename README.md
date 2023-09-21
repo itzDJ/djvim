@@ -34,7 +34,8 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
 
 ## TODO
-- Setup a formatter, like prettier, to format on save
+### Text editing
+- Have background non-transparent by default with a command to toggle transparency
+- Render whitespaces (view spaces/tabs/EOL in files)
 - View and change tab value (2 or 4 spaces or tab)
-- Configure for Java
 - Add spell check

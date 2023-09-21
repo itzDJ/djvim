@@ -7,7 +7,7 @@ handle:close()
 if colorterm == 'truecolor\n' then
     require('github-theme').setup({
         options = {
-            transparent = true,
+            -- transparent = true
         },
     })
     vim.cmd('colorscheme github_dark')
