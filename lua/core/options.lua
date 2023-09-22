@@ -13,3 +13,10 @@ o.smartindent = true
 -- o.termguicolors = true
 -- o.spell = true
 -- o.spelllang = "en_us"
+
+-- Rendering whitespaces
+o.list = true
+o.listchars = {
+    space = "·", -- interpunct symbol
+    tab = "-->", -- two dashes and a greater than symbol
+}
