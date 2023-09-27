@@ -12,7 +12,7 @@ require('mason-lspconfig').setup({
     ensure_installed = {
         "tsserver", -- JavaScript
         "lua_ls",   -- Lua
-        "pylsp",    -- Python
+        "pyright",  -- Python
     },
     handlers = {
         lsp_zero.default_setup,
@@ -32,5 +32,5 @@ require('lspconfig').lua_ls.setup({
 
 lsp_zero.setup_servers({
     "tsserver",
-    "pylsp",
+    "pyright",
 })
