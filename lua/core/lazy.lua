@@ -67,6 +67,11 @@ local plugins = {
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     {
+        'windwp/nvim-ts-autotag',
+        opts = {},
+    },
+
+    {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.2",
         dependencies = { "nvim-lua/plenary.nvim" }
