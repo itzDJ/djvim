@@ -40,3 +40,6 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Add spell check
 ### Code editing
 - Setup LSP for Java
+- Setup for frontend dev (React/React Native)
+    - autotags
+    - DAP (method to run the code without leaving neovim)
