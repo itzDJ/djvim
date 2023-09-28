@@ -8,6 +8,7 @@ require 'nvim-treesitter.configs'.setup {
         "vimdoc",
         "query",
 
+        "comment", -- highlights TODO, FIXME, etc.
         "javascript",
         "python",
     },
