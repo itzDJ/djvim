@@ -42,5 +42,5 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Setup LSP for Java
 - Setup for frontend dev (React/React Native)
     - autotags
-- Check for way to run code (java, react native, python, etc.) without exiting vim
+- Check for way to run code (java, react native, python, etc.) without exiting vim. Probably add toggleterm (or another terminal)
 - Check if LSP zero still has an option to download LSP for current file
