@@ -1,4 +1,4 @@
-require 'nvim-treesitter.configs'.setup {
+require("nvim-treesitter.configs").setup({
     -- A list of parser names, or "all"
     ensure_installed = {
         -- These five are required by treesitter
@@ -11,10 +11,6 @@ require 'nvim-treesitter.configs'.setup {
         "comment", -- highlights TODO, FIXME, etc.
         "javascript",
         "python",
-    },
-
-    autotag = {
-        enable = true,
     },
 
     -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -33,4 +29,4 @@ require 'nvim-treesitter.configs'.setup {
         -- Instead of true it can also be a list of languages
         additional_vim_regex_highlighting = false,
     },
-}
+})
