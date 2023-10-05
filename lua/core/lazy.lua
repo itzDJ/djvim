@@ -17,34 +17,39 @@ local plugins = {
         opts = {},
     },
 
+    {
+        "stevearc/conform.nvim",
+        opts = {},
+    },
+
     "github/copilot.vim",
 
-    'projekt0n/github-nvim-theme',
+    "projekt0n/github-nvim-theme",
 
     "theprimeagen/harpoon",
 
     {
-        { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+        { "VonHeikemen/lsp-zero.nvim",        branch = "v3.x" },
 
         --- Uncomment these if you want to manage LSP servers from neovim
-        { 'williamboman/mason.nvim' },
-        { 'williamboman/mason-lspconfig.nvim' },
+        { "williamboman/mason.nvim" },
+        { "williamboman/mason-lspconfig.nvim" },
 
         -- LSP Support
         {
-            'neovim/nvim-lspconfig',
+            "neovim/nvim-lspconfig",
             dependencies = {
-                { 'hrsh7th/cmp-nvim-lsp' },
+                { "hrsh7th/cmp-nvim-lsp" },
             },
         },
 
         -- Autocompletion
         {
-            'hrsh7th/nvim-cmp',
+            "hrsh7th/nvim-cmp",
             dependencies = {
-                { 'L3MON4D3/LuaSnip' },
-            }
-        }
+                { "L3MON4D3/LuaSnip" },
+            },
+        },
     },
 
     {
@@ -55,33 +60,30 @@ local plugins = {
 
     {
         "iamcco/markdown-preview.nvim",
-        build = function() vim.fn["mkdp#util#install"]() end,
+        build = function()
+            vim.fn["mkdp#util#install"]()
+        end,
     },
 
     {
-        'windwp/nvim-autopairs',
+        "windwp/nvim-autopairs",
         event = "InsertEnter",
-        opts = {} -- this is equalent to setup({}) function
+        opts = {}, -- this is equalent to setup({}) function
     },
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
     {
-        'windwp/nvim-ts-autotag',
-        opts = {},
-    },
-
-    {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.2",
-        dependencies = { "nvim-lua/plenary.nvim" }
+        dependencies = { "nvim-lua/plenary.nvim" },
     },
 
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {},
-    }
+    },
 }
 
 require("lazy").setup(plugins)
