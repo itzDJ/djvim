@@ -13,6 +13,10 @@ require("nvim-treesitter.configs").setup({
         "python",
     },
 
+    autotag = {
+        enable = true,
+    },
+
     -- Install parsers synchronously (only applied to `ensure_installed`)
     sync_install = false,
 
