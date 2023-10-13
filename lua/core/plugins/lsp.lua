@@ -11,8 +11,8 @@ require("mason").setup({})
 require("mason-lspconfig").setup({
     ensure_installed = {
         "tsserver", -- JavaScript
-        "lua_ls", -- Lua
-        "pyright", -- Python
+        "lua_ls",   -- Lua
+        "pyright",  -- Python
     },
     handlers = {
         lsp_zero.default_setup,
@@ -38,7 +38,7 @@ lsp_zero.setup_servers({
 -- Custom function to install formatters (prettier)
 vim.api.nvim_create_user_command("InstallFormatters", function()
     local formatters = {
-        "stylua",
+        "isort",
         "black",
         "prettier",
         "codespell",

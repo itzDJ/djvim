@@ -1,9 +1,8 @@
 require("conform").setup({
     -- Map of filetype to formatters
     formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "black" },
-        javascript = { "prettier" },
+        -- Conform will run multiple formatters sequentially
+        python = { "isort", "black" },
         -- Use the "*" filetype to run formatters on all filetypes.
         ["*"] = { "codespell" },
         -- Use the "_" filetype to run formatters on filetypes that don't
