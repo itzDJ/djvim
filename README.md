@@ -25,11 +25,8 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 
 ## Dependencies
 
-- True color support in terminal (optional)
-- Node
-- Git
-- Curl
-- Ripgrep
+- `:checkhealth`
+- True color support in terminal (semi-optional)
 
 ## Install
 
