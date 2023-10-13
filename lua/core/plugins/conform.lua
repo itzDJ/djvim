@@ -8,7 +8,7 @@ require("conform").setup({
         ["*"] = { "codespell" },
         -- Use the "_" filetype to run formatters on filetypes that don't
         -- have other formatters configured.
-        -- ["_"] = { "prettier" },
+        ["_"] = { "prettier" },
     },
     -- If this is set, Conform will run the formatter on save.
     -- It will pass the table to conform.format().
