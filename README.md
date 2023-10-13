@@ -20,6 +20,7 @@
 - [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [trouble](https://github.com/folke/trouble.nvim)
 
