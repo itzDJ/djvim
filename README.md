@@ -1,15 +1,15 @@
 # DJ's [Neovim](https://neovim.io)
 
-## Nerd Fonts
+## Dependencies
 
-Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsMono Nerd Font Regular](https://www.programmingfonts.org/#jetbrainsmono)) for proper icon integration.
-
-## Plugin manager
-
-[Lazy](https://github.com/folke/lazy.nvim)
+- Plugins: `:checkhealth`
+- Visual (semi-optional)
+  - [Nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsMono Nerd Font Regular](https://www.programmingfonts.org/#jetbrainsmono)) for proper icon integration.
+  - True color support in terminal
 
 ## Plugins
 
+- Plugin manager: [Lazy](https://github.com/folke/lazy.nvim)
 - [comment](https://github.com/numToStr/Comment.nvim)
 - [conform](https://github.com/stevearc/conform.nvim/)
 - [copilot](https://github.com/github/copilot.vim)
@@ -22,11 +22,6 @@ Install a [nerd font](https://www.nerdfonts.com/font-downloads) (ex: [JetBrainsM
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [trouble](https://github.com/folke/trouble.nvim)
-
-## Dependencies
-
-- `:checkhealth`
-- True color support in terminal (semi-optional)
 
 ## Install
 
@@ -54,4 +49,5 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Setup for frontend dev (React/React Native)
   - autotags (test with .js .jsx .html)
 - Check for way to run code (java, react native, python, etc.) without exiting vim. Probably add toggleterm (or another terminal)
+- Setup telescope to search for text within files
 - Check if LSP zero still has an option to download LSP for current file
