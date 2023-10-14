@@ -10,9 +10,10 @@ end)
 require("mason").setup({})
 require("mason-lspconfig").setup({
     ensure_installed = {
-        "tsserver", -- JavaScript
         "lua_ls",   -- Lua
         "pyright",  -- Python
+        "tsserver", -- JavaScript / TypeScript
+        "jdtls",    -- Java (requires JDK 17 as JAVA_HOME)
     },
     handlers = {
         lsp_zero.default_setup,
@@ -30,9 +31,11 @@ require("lspconfig").lua_ls.setup({
     },
 })
 
+-- Not sure if this is needed
 lsp_zero.setup_servers({
-    "tsserver",
     "pyright",
+    "tsserver",
+    "jdtls",
 })
 
 -- Custom function to install formatters (prettier)
