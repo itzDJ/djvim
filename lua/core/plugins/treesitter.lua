@@ -9,8 +9,9 @@ require("nvim-treesitter.configs").setup({
         "query",
 
         "comment", -- highlights TODO, FIXME, etc.
-        "javascript",
         "python",
+        "javascript",
+        "java",
     },
 
     autotag = {
