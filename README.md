@@ -46,6 +46,6 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 
 ### Code editing
 
+- Add method to search TODOs
 - Check for way to run code (java, react native, python, etc.) without exiting vim. Probably add toggleterm (or another terminal)
-- Setup telescope to search for text within files
 - Check if LSP zero still has an option to download LSP for current file
