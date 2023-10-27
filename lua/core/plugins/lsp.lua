@@ -47,6 +47,7 @@ vim.api.nvim_create_user_command("InstallFormatters", function()
         "isort",
         "black",
         "prettier",
+        "codespell",
     }
 
     for _, formatter in pairs(formatters) do
