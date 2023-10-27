@@ -3,8 +3,15 @@ require("conform").setup({
     formatters_by_ft = {
         -- Conform will run multiple formatters sequentially
         python = { "isort", "black" },
-        -- Run on all unspecified filetypes
-        ["_"] = { "prettier" },
+        -- javascript = { "prettier" },
+        -- html = { "prettier" },
+        -- css = { "prettier" },
+        javascript = { "prettier" },
+        html = { "prettier" },
+        css = { "prettier" },
+        java = { "prettier" },
+        -- Run on all files
+        -- ["*"] = { "codespell" },
     },
     -- If this is set, Conform will run the formatter on save.
     -- It will pass the table to conform.format().
