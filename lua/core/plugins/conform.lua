@@ -3,8 +3,7 @@ require("conform").setup({
     formatters_by_ft = {
         -- Conform will run multiple formatters sequentially
         python = { "isort", "black" },
-        -- Use the "_" filetype to run formatters on filetypes that don't
-        -- have other formatters configured.
+        -- Run on all unspecified filetypes
         ["_"] = { "prettier" },
     },
     -- If this is set, Conform will run the formatter on save.
