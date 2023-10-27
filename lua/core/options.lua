@@ -20,3 +20,6 @@ o.listchars = {
     space = "·", -- interpunct symbol
     tab = "-->", -- two dashes and a greater than symbol
 }
+
+-- Removes weird gray column on the left in default macOS terminal
+o.signcolumn = "no"
