@@ -1,25 +1,22 @@
 -- (VIM) SETTINGS
-local o = vim.opt
+vim.opt.number = true
+vim.opt.relativenumber = true
 
-o.number = true
-o.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
-o.expandtab = true
-
-o.smartindent = true
--- o.termguicolors = true
--- o.spell = true
--- o.spelllang = "en_us"
+vim.opt.spell = true
+vim.opt.spelllang = "en_us"
 
 -- Rendering whitespaces
-o.list = true
-o.listchars = {
+vim.opt.list = true
+vim.opt.listchars = {
     space = "·", -- interpunct symbol
     tab = "-->", -- two dashes and a greater than symbol
 }
 
 -- Removes weird gray column on the left in default macOS terminal
-o.signcolumn = "no"
+vim.opt.signcolumn = "no"
