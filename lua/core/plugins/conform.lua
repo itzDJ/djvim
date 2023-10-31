@@ -10,9 +10,6 @@ require("conform").setup({
         css = { "prettier" },
         markdown = { "prettier" },
         java = { "prettier" },
-
-        -- Run on all files
-        ["*"] = { "codespell" },
     },
     -- If this is set, Conform will run the formatter on save.
     -- It will pass the table to conform.format().
