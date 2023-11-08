@@ -3,7 +3,7 @@
 ## Dependencies
 
 - Plugins: `:checkhealth`
-- [Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) for proper icon integration
+- [Nerd font](https://www.nerdfonts.com/font-downloads) like [JetBrainsMono](https://www.programmingfonts.org/#jetbrainsmono) for proper icon integration
 - True color support in terminal
 
 ## Plugins
@@ -40,9 +40,7 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ### Text editing
 
 - View and change tab value (2 or 4 spaces or tab)
-- Add spell check
 
 ### Code editing
 
 - Add method to search TODOs
-- Check if LSP zero still has an option to download LSP for current file
