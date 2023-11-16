@@ -38,10 +38,12 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 
 ## TODO
 
-### Text editing
-
-- View and change tab value (2 or 4 spaces or tab)
-
-### Code editing
-
-- Add method to search TODOs
+- Per language settings:
+  - Indents (controlled by LSP and formatter)
+  - LSPs (get as close to native nvim-lspconfig as possible)
+  - Formatting (ideally controlled by LSP allowing the removal of conform)
+  - CMP (possibly limit to 5 values in the CMP)
+  - Snippets (like java main method, java system.out.println, html5 expansion template)
+- Add method to search TODOs (note: jdtls already highlights todos, so maybe treesitter/lsp highlighting todos + search is enough)
+- Change lualine theme based on truecolor availability
+- Consider using surround.vim instead of the two lua based plugins
