@@ -17,6 +17,7 @@ require("mason-lspconfig").setup({
         "pyright",  -- Python
         "tsserver", -- JavaScript / TypeScript
         "jdtls",    -- Java (requires JDK 17 as JAVA_HOME)
+        "clangd",   -- C/C++
     },
     handlers = {
         lsp_zero.default_setup,
@@ -39,6 +40,7 @@ lsp_zero.setup_servers({
     "pyright",
     "tsserver",
     "jdtls",
+    "clangd",
 })
 
 -- Custom function to install formatters (prettier)
