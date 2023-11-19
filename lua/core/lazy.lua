@@ -2,8 +2,7 @@ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
         "git",
-        "clone",
-        "--filter=blob:none",
+        "clone", "--filter=blob:none",
         "https://github.com/folke/lazy.nvim.git",
         "--branch=stable", -- latest stable release
         lazypath,
@@ -27,20 +26,14 @@ local plugins = {
             }
             dashboard.section.buttons.val = {
                 dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
-                dashboard.button("f", "  Find file", ":Telescope find_files<CR>"),
-                dashboard.button("t", "  Browse files", ":e .<CR>"),
-                dashboard.button("g", "  Search in files", ":Telescope live_grep<CR>"),
+                dashboard.button("t", "  Netrw", ":e .<CR>"),
+                dashboard.button("ff", "  Find file", ":Telescope find_files<CR>"),
+                dashboard.button("fg", "  Search in files", ":Telescope live_grep<CR>"),
                 dashboard.button("c", "  Neovim config", ":e $MYVIMRC<CR>"),
+                dashboard.button("p", "  Manage plugins", ":Lazy<CR>"),
                 dashboard.button("q", "󰅚  Quit NVIM", ":qa<CR>"),
             }
-            local handle = io.popen('fortune')
-            local fortune = handle:read("*a")
-            handle:close()
-            dashboard.section.footer.val = fortune
-
-            dashboard.config.opts.noautocmd = true
-
-            -- vim.cmd [[autocmd User AlphaReady echo 'ready']]
+            dashboard.config.opts.noautocmd = true -- Don't know if this is needed
 
             alpha.setup(dashboard.config)
         end
