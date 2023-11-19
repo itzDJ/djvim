@@ -46,5 +46,5 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
   - Snippets (like java main method, java system.out.println, html5 expansion template)
 - Add method to search TODOs (note: jdtls already highlights todos, so maybe treesitter/lsp highlighting todos + search is enough)
 - Customize lualine (probably keep theme on auto).
-  - When typing `vim`, make sure the standard nvim version and info show up, or use alpha-nvim if a file isn't passed
+- Add alpha-nvim and have it somewhat mirror VSCodium
 - Consider using surround.vim instead of the two lua based plugins
