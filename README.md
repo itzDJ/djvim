@@ -10,6 +10,7 @@
 ## Plugins
 
 - Plugin manager: [Lazy](https://github.com/folke/lazy.nvim)
+- [alpha-nvim](https://github.com/goolord/alpha-nvim/)
 - [comment](https://github.com/numToStr/Comment.nvim)
 - [conform](https://github.com/stevearc/conform.nvim/)
 - [copilot](https://github.com/github/copilot.vim)
@@ -46,5 +47,4 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
   - Snippets (like java main method, java system.out.println, html5 expansion template)
 - Add method to search TODOs (note: jdtls already highlights todos, so maybe treesitter/lsp highlighting todos + search is enough)
 - Customize lualine (probably keep theme on auto).
-- Add alpha-nvim and have it somewhat mirror VSCodium
 - Consider using surround.vim instead of the two lua based plugins

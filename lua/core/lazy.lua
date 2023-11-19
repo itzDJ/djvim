@@ -13,6 +13,40 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     {
+        "goolord/alpha-nvim",
+        config = function()
+            local alpha = require 'alpha'
+            local dashboard = require 'alpha.themes.dashboard'
+            dashboard.section.header.val = {
+                [[     _  _       _           ]],
+                [[  __| |(_)_   _(_)_ __ ___  ]],
+                [[ / _` || \ \ / / | '_ ` _ \ ]],
+                [[| (_| || |\ V /| | | | | | |]],
+                [[ \__,_|/ | \_/ |_|_| |_| |_|]],
+                [[     |__/]],
+            }
+            dashboard.section.buttons.val = {
+                dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
+                dashboard.button("f", "  Find file", ":Telescope find_files<CR>"),
+                dashboard.button("t", "  Browse files", ":e .<CR>"),
+                dashboard.button("g", "  Search in files", ":Telescope live_grep<CR>"),
+                dashboard.button("c", "  Neovim config", ":e $MYVIMRC<CR>"),
+                dashboard.button("q", "󰅚  Quit NVIM", ":qa<CR>"),
+            }
+            local handle = io.popen('fortune')
+            local fortune = handle:read("*a")
+            handle:close()
+            dashboard.section.footer.val = fortune
+
+            dashboard.config.opts.noautocmd = true
+
+            -- vim.cmd [[autocmd User AlphaReady echo 'ready']]
+
+            alpha.setup(dashboard.config)
+        end
+    },
+
+    {
         "numToStr/Comment.nvim",
         opts = {},
     },
