@@ -45,6 +45,3 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
   - Formatting (ideally controlled by LSP allowing the removal of conform)
   - CMP (possibly limit to 5 values in the CMP)
   - Snippets (like java main method, java system.out.println, html5 expansion template)
-- Add method to search TODOs (note: jdtls already highlights todos, so maybe treesitter/lsp highlighting todos + search is enough)
-- Customize lualine (probably keep theme on auto).
-- Consider using surround.vim instead of the two lua based plugins
