@@ -33,7 +33,7 @@ local plugins = {
                 dashboard.button("p", "  Manage plugins", ":Lazy<CR>"),
                 dashboard.button("q", "󰅚  Quit NVIM", ":qa<CR>"),
             }
-            dashboard.config.opts.noautocmd = true -- Don't know if this is needed
+            dashboard.config.opts.noautocmd = true -- NOTE: Don't know if this is needed
 
             alpha.setup(dashboard.config)
         end
@@ -95,7 +95,7 @@ local plugins = {
     {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
-        opts = {}, -- this is equalent to setup({}) function
+        opts = {}, -- this is equivalent to setup({}) function
     },
 
     { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
