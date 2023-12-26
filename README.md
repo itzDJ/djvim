@@ -7,24 +7,6 @@
 - True color support in terminal
 - macOS shell command to enable repeating vim motions in default terminal: `defaults write com.apple.Terminal ApplePressAndHoldEnabled -bool false`. Replace `com.apple.Terminal` with `-g` for global use.
 
-## Plugins
-
-- Plugin manager: [Lazy](https://github.com/folke/lazy.nvim)
-- [alpha-nvim](https://github.com/goolord/alpha-nvim/)
-- [comment](https://github.com/numToStr/Comment.nvim)
-- [conform](https://github.com/stevearc/conform.nvim/)
-- [copilot](https://github.com/github/copilot.vim)
-- [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme)
-- [harpoon](https://github.com/ThePrimeagen/harpoon)
-- [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
-- [lualine](https://github.com/nvim-lualine/lualine.nvim)
-- [markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
-- [telescope](https://github.com/nvim-telescope/telescope.nvim)
-- [trouble](https://github.com/folke/trouble.nvim)
-
 ## Install
 
 ```bash
