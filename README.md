@@ -26,3 +26,4 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
   - Indents (controlled by LSP and formatter)
   - Formatting (ideally controlled by LSP allowing the removal of conform)
   - CMP (possibly limit to 5 values in the CMP)
+  - Snippets (add custom snippets like a **main** snippet in py files)
