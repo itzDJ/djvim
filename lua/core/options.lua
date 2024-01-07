@@ -2,6 +2,9 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Disable netrw banner
+vim.g.netrw_banner = 0
+
 -- Indentation
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
