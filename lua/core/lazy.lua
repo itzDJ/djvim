@@ -25,12 +25,10 @@ local plugins = {
                 [[     |__/]],
             }
             dashboard.section.buttons.val = {
-                dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
                 dashboard.button("t", "  Netrw", ":e .<CR>"),
                 dashboard.button("ff", "  Find file", ":Telescope find_files<CR>"),
                 dashboard.button("fg", "  Search in files", ":Telescope live_grep<CR>"),
                 dashboard.button("c", "  Neovim config", ":e $MYVIMRC<CR>"),
-                dashboard.button("p", "  Manage plugins", ":Lazy<CR>"),
                 dashboard.button("q", "󰅚  Quit NVIM", ":qa<CR>"),
             }
             dashboard.config.opts.noautocmd = true -- NOTE: Don't know if this is needed
@@ -53,31 +51,16 @@ local plugins = {
 
     "projekt0n/github-nvim-theme",
 
+    -- TODO Switch to v2
     "theprimeagen/harpoon",
 
-    {
-        { "VonHeikemen/lsp-zero.nvim",        branch = "v3.x" },
-
-        --- Uncomment these if you want to manage LSP servers from neovim
-        { "williamboman/mason.nvim" },
-        { "williamboman/mason-lspconfig.nvim" },
-
-        -- LSP Support
-        {
-            "neovim/nvim-lspconfig",
-            dependencies = {
-                { "hrsh7th/cmp-nvim-lsp" },
-            },
-        },
-
-        -- Autocompletion
-        {
-            "hrsh7th/nvim-cmp",
-            dependencies = {
-                { "L3MON4D3/LuaSnip" },
-            },
-        },
-    },
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' },
+    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'neovim/nvim-lspconfig' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/nvim-cmp' },
+    { 'L3MON4D3/LuaSnip' },
 
     {
         "nvim-lualine/lualine.nvim",

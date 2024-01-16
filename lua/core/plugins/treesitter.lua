@@ -10,8 +10,10 @@ require("nvim-treesitter.configs").setup({
 
         "comment", -- highlights TODO, FIXME, etc.
         "python",
+
         "javascript",
-        "java",
+        "html",
+        "css",
     },
 
     autotag = {

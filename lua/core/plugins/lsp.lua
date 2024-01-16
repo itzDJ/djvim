@@ -10,37 +10,24 @@ lsp_zero.on_attach(function(client, bufnr)
     lsp_zero.buffer_autoformat()  -- TODO Is this needed after adding conform?
 end)
 
+-- Get the language server to recognize the `vim` global in Neovim config
+local lua_opts = lsp_zero.nvim_lua_ls()
+require("lspconfig").lua_ls.setup(lua_opts)
+
 require("mason").setup({})
 require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",   -- Lua
         "pyright",  -- Python
+
         "tsserver", -- JavaScript / TypeScript
-        "jdtls",    -- Java (requires JDK 17 as JAVA_HOME)
-        "clangd",   -- C/C++
+        "html",     -- HTML
+        "cssls",    -- CSS
     },
     handlers = {
+        -- Sets up servers with default settings
         lsp_zero.default_setup,
     },
-})
-
-require("lspconfig").lua_ls.setup({
-    settings = {
-        Lua = {
-            diagnostics = {
-                -- Get the language server to recognize the `vim` global
-                globals = { "vim" },
-            },
-        },
-    },
-})
-
--- Not sure if this is needed
-lsp_zero.setup_servers({
-    "pyright",
-    "tsserver",
-    "jdtls",
-    "clangd",
 })
 
 -- Custom function to install formatters (prettier)
