@@ -99,6 +99,9 @@ local plugins = {
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {},
     },
+
+    -- NOTE: Type `html:5` and press `<C-y>,` to expand to HTML boilerplate
+    "mattn/emmet-vim",
 }
 
 require("lazy").setup(plugins)
