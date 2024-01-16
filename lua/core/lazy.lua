@@ -102,6 +102,16 @@ local plugins = {
 
     -- NOTE: Type `html:5` and press `<C-y>,` to expand to HTML boilerplate
     "mattn/emmet-vim",
+
+    {
+        "norcalli/nvim-colorizer.lua",
+        opts = {
+            -- only enable colorizer for css, html, and javascript
+            'css',
+            'html',
+            'javascript',
+        },
+    },
 }
 
 require("lazy").setup(plugins)

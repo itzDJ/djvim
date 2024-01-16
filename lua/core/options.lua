@@ -13,7 +13,8 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 -- Spell checking
-vim.opt.spell = true
+-- NOTE: Manually use `:set spell` and `:set nospell` as needed
+-- vim.opt.spell = true
 vim.opt.spelllang = "en_us"
 
 -- Rendering whitespaces
@@ -25,3 +26,6 @@ vim.opt.listchars = {
 
 -- Removes weird gray column on the left in default macOS terminal
 vim.opt.signcolumn = "no"
+
+-- Required for nvim-colorizer
+vim.opt.termguicolors = true
