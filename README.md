@@ -22,8 +22,6 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ## TODO
 
 - Per language settings:
-  - LSPs (get as close to native nvim-lspconfig as possible)
   - Indents (controlled by LSP and formatter)
-  - Formatting (ideally controlled by LSP allowing the removal of conform)
-  - CMP (possibly limit to 5 values in the CMP)
   - Snippets (add custom snippets like a dunder main snippet in py files)
+- Change emmet-vim plugin's keymap, so it doesn't interfere with CMP
