@@ -101,7 +101,7 @@ local plugins = {
     },
 
     -- NOTE: Type `html:5` and press `<C-y>,` to expand to HTML boilerplate
-    "mattn/emmet-vim",
+    -- "mattn/emmet-vim",
 
     {
         "norcalli/nvim-colorizer.lua",
