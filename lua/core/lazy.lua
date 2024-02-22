@@ -100,7 +100,8 @@ local plugins = {
         opts = {},
     },
 
-    -- NOTE: Type `html:5` and press `<C-y>,` to expand to HTML boilerplate
+    -- NOTE: Type `html:5` and press `<C-y>,` (control + y then the comma) to expand HTML boilerplate
+    -- TODO: Change keybind so it doesn't conflict with LSP (CMP) completion
     -- "mattn/emmet-vim",
 
     {

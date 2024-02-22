@@ -24,4 +24,3 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Per language settings:
   - Indents (controlled by LSP and formatter)
   - Snippets (add custom snippets like a dunder main snippet in py files)
-- Change emmet-vim plugin's keymap, so it doesn't interfere with CMP
