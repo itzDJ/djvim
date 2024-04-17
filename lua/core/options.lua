@@ -33,3 +33,7 @@ vim.opt.termguicolors = true
 
 -- 7 lines max show up in CMP's completion menu
 vim.opt.pumheight = 7
+
+-- Case insensitive searching
+vim.opt.ignorecase = true
+vim.opt.smartcase = true -- Override ignorecase if the search pattern contains uppercase characters
