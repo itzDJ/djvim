@@ -37,3 +37,9 @@ vim.opt.pumheight = 7
 -- Case insensitive searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true -- Override ignorecase if the search pattern contains uppercase characters
+
+-- Disable menu to disable mouse
+vim.cmd([[
+    aunmenu PopUp.How-to\ disable\ mouse
+    aunmenu PopUp.-1-
+]])
