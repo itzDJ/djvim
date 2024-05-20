@@ -18,9 +18,3 @@ git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim && nvim
 ```bash
 rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
-
-## TODO
-
-- Per language settings:
-  - Indents (controlled by LSP and formatter)
-  - Snippets (add custom snippets like a dunder main snippet in py files)
