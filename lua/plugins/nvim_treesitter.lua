@@ -7,7 +7,7 @@ return {
         configs.setup({
             ensure_installed = {
                 "c", "lua", "vim", "vimdoc", "query",
-                "python",
+                "python", "bash",
                 "javascript", "html", "css"
             },
             autotag = { enable = true },

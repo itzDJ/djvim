@@ -8,6 +8,7 @@ return {
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/nvim-cmp",
         "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
 
         "stevearc/conform.nvim",
     },
@@ -43,11 +44,33 @@ return {
         -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
         local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+        local ls = require("luasnip")
+        local s = ls.snippet
+        local i = ls.insert_node
+        local fmt = require("luasnip.extras.fmt").fmt
+
+        ls.add_snippets("python", {
+            s("main", fmt(
+                [[
+                #!/usr/bin/env python3
+
+
+                def main():
+                    {}
+
+
+                if __name__ == "__main__":
+                    main()
+                ]], i(0)
+            ))
+        })
+
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",   -- Lua
                 "pyright",  -- Python
+                "bashls",   -- Bash
 
                 "tsserver", -- JavaScript / TypeScript
                 "html",     -- HTML
