@@ -1,4 +1,4 @@
-# DJ's [Neovim](https://neovim.io)
+# djvim
 
 ## Dependencies
 
@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-git clone https://github.com/itzDJ/djs-neovim ~/.config/nvim && nvim
+git clone https://github.com/itzDJ/djvim ~/.config/nvim && nvim
 ```
 
 ## Uninstall
