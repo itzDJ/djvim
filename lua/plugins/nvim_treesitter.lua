@@ -6,13 +6,15 @@ return {
 
         configs.setup({
             ensure_installed = {
-                "c", "lua", "vim", "vimdoc", "query",
+                -- Required by treesitter
+                "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline",
+                -- Additional languages
                 "python", "bash",
-                "javascript", "html", "css"
             },
-            autotag = { enable = true },
             sync_install = false,
+            auto_install = true,
             highlight = { enable = true },
+            autotag = { enable = true },
             indent = { enable = true },
         })
     end
