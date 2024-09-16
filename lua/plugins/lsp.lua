@@ -50,7 +50,7 @@ return {
         local fmt = require("luasnip.extras.fmt").fmt
 
         ls.add_snippets("python", {
-            s("main", fmt(
+            s("main_method", fmt(
                 [[
                 #!/usr/bin/env python3
 
@@ -68,13 +68,9 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "lua_ls",   -- Lua
-                "pyright",  -- Python
-                "bashls",   -- Bash
-
-                "tsserver", -- JavaScript / TypeScript
-                "html",     -- HTML
-                "cssls",    -- CSS
+                "lua_ls",  -- Lua
+                "pyright", -- Python
+                "bashls",  -- Bash
             },
             handlers = {
                 -- Setup all servers with default settings
@@ -119,9 +115,6 @@ return {
                 python = { "isort", "black" },
 
                 -- Prettier
-                javascript = { "prettier" },
-                html = { "prettier" },
-                css = { "prettier" },
                 markdown = { "prettier" },
             },
             -- If this is set, Conform will run the formatter on save.
