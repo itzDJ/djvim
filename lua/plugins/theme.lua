@@ -7,7 +7,7 @@ return {
             },
         })
 
-        -- If `echo $COLORTERM` returns 'truecolor\n' then require the theme
+        -- If `echo $COLORTERM` returns 'truecolor\n' then enable the theme
         if io.popen("echo $COLORTERM"):read("*a") == "truecolor\n" then
             vim.cmd("colorscheme github_dark")
         end
