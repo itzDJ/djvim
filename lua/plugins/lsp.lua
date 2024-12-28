@@ -1,7 +1,7 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
-        "github/copilot.vim",
+        -- "github/copilot.vim",
 
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig",
