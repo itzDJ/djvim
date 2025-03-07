@@ -100,7 +100,7 @@ return {
         local formatters = {
             "isort",
             "black",
-            "prettier",
+            -- "prettier",
         }
         for _, formatter in pairs(formatters) do
             if vim.fn.executable(formatter) ~= 1 then
@@ -115,7 +115,7 @@ return {
                 python = { "isort", "black" },
 
                 -- Prettier
-                markdown = { "prettier" },
+                -- markdown = { "prettier" },
             },
             -- If this is set, Conform will run the formatter on save.
             -- It will pass the table to conform.format().
