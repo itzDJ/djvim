@@ -97,6 +97,11 @@ return {
             },
         })
 
+        -- Enables virtual text (i.e. inline error messages)
+        vim.diagnostic.config({
+            virtual_text = true,
+        })
+
         -- If the formatters are not installed, install them
         local formatters = {
             "stylua",
