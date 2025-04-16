@@ -38,8 +38,8 @@ vim.opt.pumheight = 7
 vim.opt.ignorecase = true
 vim.opt.smartcase = true -- Override ignorecase if the search pattern contains uppercase characters
 
--- Disable menu to disable mouse
+-- Remove the default popup-menu (on right click) without disabling mouse
 vim.cmd([[
-    aunmenu PopUp.How-to\ disable\ mouse
-    aunmenu PopUp.-1-
+    aunmenu PopUp
+    autocmd! nvim.popupmenu
 ]])
